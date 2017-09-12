@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update -y
-RUN apt-get install postgresql-client-9.5 wget -y
+RUN apt-get install postgresql-client-9.5 wget curl -y
 
 RUN wget https://github.com/mattes/migrate/releases/download/v3.0.1/migrate.linux-amd64.tar.gz
 RUN tar -xvf migrate.linux-amd64.tar.gz
